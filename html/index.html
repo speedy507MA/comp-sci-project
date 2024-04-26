@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Themes</title>
-    <style>
-      @media (prefers-color-scheme:light) {
-        body {
-          --prefers-color-scheme: light
-        }
-      }
-
-      @media (prefers-color-scheme:dark) {
-        body {
-          --prefers-color-scheme: dark
-        }
-      }
-    </style>
-    <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        const L_STORE = {
-          a: document,
-          b: document.body,
-          c: function () {
-            if (window.getComputedStyle(this.b).getPropertyValue('--prefers-color-scheme') == 'light') {
-              window.location.replace('./light.html')
-            } else {
-              window.location.replace('./dark.html')
-            }
-          }
-        };
-        L_STORE.c();
-      }, { once: true })
-    </script>
-  </head>
+  <head></head>
   <body>
-    <p>You will be redirected shortly. Please wait...</p>
+    <div class="navarea">
+      <ul class="innav">
+        <li class="inan inavi">
+          <a class="ahide">
+            <span class="brandfont">
+              About
+            </span>
+          </a>
+        </li>
+        <li class="inan inavi">
+          <a class="ahide">
+            <span class="brandfont">
+              Light
+            </span>
+          </a>
+        </li>
+        <li class="inan inavi">
+          <a class="ahide">
+            <span class="brandfont">
+              Dark
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="light" hidden>
+
+      </div>
+      <div class="dark" hidden>
+
+      </div>
+    </div>
   </body>
 </html>
