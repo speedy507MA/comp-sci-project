@@ -1,0 +1,91 @@
+/* base */
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+.bfont {
+    font-family: 'New Astro Soft', sans-serif;
+}
+.noselect {
+    user-select: none;
+}
+.nolink {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit
+}
+a {
+    color: black;
+}
+.nobullet {
+    list-style-type: none;
+    list-style: none;
+}
+
+/* non */
+.top-nav {
+    background-color: #e8e8e8;
+}
+.area-title {
+    display: flex;
+    vertical-align: middle;
+}
+.at-link {
+    margin: auto;
+}
+.at-link > span {
+    font-size: 4rem;
+}
+.navin, .nav-item {
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    padding: 1rem;
+    background-color: #a8a8a8;
+    border-radius: 0.2rem;
+    min-width: 85px;
+    max-width: 85px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display: flex;
+    margin: 0 1rem 0 1rem;
+    transition: 0.5s;
+}
+.navin {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* VFX */
+.btm-gradient {
+    min-height: 6rem;
+    max-height: 6rem;
+    background-image: linear-gradient(to bottom, #e8e8e8, white 90%);
+}
+.nil-text:hover {
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.nil-text {
+    transition: 0.5s;
+}
+.nav-item:hover .ni-text {
+    letter-spacing: 0.5rem;
+    margin-left: 0.5rem;
+    transition: 0.5s;
+}
+.ni-text {
+    transition: 0.5s;
+}
+.nav-item:hover {
+    box-shadow: 0 0 50px 1px black;
+    transition: 0.5s;
+    border-radius: 8px;
+}
