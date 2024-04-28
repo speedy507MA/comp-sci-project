@@ -3,7 +3,12 @@
         const L_LOG = [];
         if ($('.theme').length) {
             let a = $('.theme')[0];
-            let b = a.
+            let b = a.style;
+            if (b.content) {
+
+            } else {
+                reportError()
+            }
         } else {
             let a = {
                 "FRIENDLY": "Unable to find element of class: \"theme\".",
