@@ -1,4 +1,62 @@
+/* base */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
 .bfont {
     font-family: 'New Astro Soft', sans-serif;
-    font-weight: 400;
+}
+.noselect {
+    user-select: none;
+}
+.nolink {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit
+}
+a {
+    color: white;
+}
+.nobullet {
+    list-style-type: none;
+    list-style: none;
+}
+
+/* non */
+.top-nav {
+    background-color: #171717;
+}
+.area-title {
+    display: flex;
+    vertical-align: middle;
+}
+.at-link {
+    margin: auto;
+}
+.at-link > span {
+    font-size: 4rem;
+}
+.navin, .nav-item {
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    padding: 1rem;
+    background-color: #575757;
+    border-radius: 0.2rem;
+    min-width: 85px;
+    max-width: 85px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display: flex;
+    margin: 0 1rem 0 1rem
+}
+.navin {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
 }
