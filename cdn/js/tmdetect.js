@@ -5,9 +5,17 @@
             let a = $('.theme')[0];
             let b = a.style;
             if (b.content) {
-
+                if (b.content=='light') {
+                    this.window.location.replace('light.html')
+                } else {
+                    this.window.location.replace('dark.html')
+                }
             } else {
-                reportError()
+                reportError({
+                    "FRIENDLY": `Element "${($('.theme')[0])}" has no CSS value for content.`,
+                    "UNFRIENDLY": "No content for theme"
+                })
+                this.window.location.reload()
             }
         } else {
             let a = {
