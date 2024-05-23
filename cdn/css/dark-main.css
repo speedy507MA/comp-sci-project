@@ -31,7 +31,8 @@ a {
 
 .top-nav-in {
     background-color: #171717;
-    background-image: url(../images/dbg.png)
+    background-image: url(../images/dbg.png);
+    background-size: cover;
 }
 
 .area-title {
