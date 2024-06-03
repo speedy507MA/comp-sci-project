@@ -1,3 +1,16 @@
+@keyframes go-in {
+    from {
+        filter: blur(3rem);
+    }
+    to {
+        filter: blur(0rem);
+    }
+}
+
+body {
+    animation: go-in 1s;
+}
+
 @media (prefers-color-scheme: light) {
     /* base */
     body {
@@ -126,6 +139,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    * {
+        transition: 1s;
+    }
     /* base */
     body {
         background-color: black;
@@ -161,7 +177,8 @@
     /* non */
     .top-nav-in {
         background-color: #171717;
-        background-image: url(../images/dbg.png)
+        background-image: url(../images/dbg.png);
+        background-size: cover;
     }
 
     .area-title {
