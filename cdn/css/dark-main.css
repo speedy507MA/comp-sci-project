@@ -1,3 +1,16 @@
+@keyframes go-in {
+    from {
+        filter: blur(3rem);
+    }
+    to {
+        filter: blur(0rem);
+    }
+}
+
+body {
+    animation: go-in 1s;
+}
+
 body {
     background-color: black;
     color: white;
@@ -31,7 +44,8 @@ a {
 
 .top-nav-in {
     background-color: #171717;
-    background-image: url(../images/dbg.png)
+    background-image: url(../images/dbg.png);
+    background-size: cover;
 }
 
 .area-title {
